@@ -1,0 +1,237 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background: #fff7f0;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #fff5e0;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #d62828;
+  font-size: 18px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #7f0909;
+}
+
+/* Banner */
+.banner {
+  background-image: url('images/Flux_Dev_A_traditional_Indian_pooja_thali_arranged_on_a_festiv_3.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  animation: fadeInDown 1s ease;
+}
+
+.banner p {
+  font-size: 1.5rem;
+  animation: fadeInUp 1.5s ease;
+}
+
+/* Products */
+.products {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2.5rem;
+  color: #b71c1c;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.product-card {
+  background: #fff3e0;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  color: #9c0d0d;
+  margin-bottom: 10px;
+}
+
+.price {
+  color: #2e7d32;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #128C7E;
+}
+
+/* Footer */
+footer {
+  background-color: #ffe8d6;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.animate.delay {
+  animation-delay: 0.5s;
+}
+
+.animate.delay2 {
+  animation-delay: 1s;
+}
+.video-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.video-wrapper {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  object-fit: cover;
+}
+.video-title {
+  font-size: 2.5rem;     /* Size बड़ा किया */
+  font-weight: 800;      /* Bold किया */
+  text-align: center;
+  margin: 30px 0 20px;
+  color: #7f0909;        /* Roli Chawal से मिलता हुआ रंग */
+  text-transform: uppercase; /* Optional: CAPITAL में दिखे */
+}
+.video-title {
+  animation: fadeInDown 1s ease;
+}
+
+.gmb-btn {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  background-color: #d84315; /* Deep orange */
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.gmb-btn:hover {
+  background-color: #bf360c;
+  transform: scale(1.05);
+}
+
+.video-section {
+  text-align: center;
+}
+
+

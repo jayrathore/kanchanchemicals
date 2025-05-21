@@ -1,0 +1,149 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff0f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #b30059;
+  padding: 10px 20px;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  height: 50px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Section */
+main.product-detail {
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+main h1 {
+  text-align: center;
+  color: #b30059;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.product-image {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+}
+
+/* Description */
+.description {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.description ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+.description ul li {
+  padding: 5px 0;
+}
+
+/* Gulal Varieties */
+.gulal-varieties {
+  padding: 20px 0;
+}
+.gulal-varieties h2 {
+  margin-bottom: 30px;
+}
+.variety-item {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+.variety-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+.variety-item h3 {
+  color: #cc0066;
+  margin-bottom: 10px;
+}
+.variety-item p {
+  margin-bottom: 10px;
+}
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #cc0066;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background-color: #99004d;
+}
+
+/* Footer */
+footer {
+  background-color: #b30059;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+}
+.footer-contact {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+.footer-contact a {
+  color: lightblue;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .gulal-varieties {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .gulal-varieties {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

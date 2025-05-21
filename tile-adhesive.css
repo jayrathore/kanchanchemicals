@@ -1,0 +1,194 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #fafafa;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #4CAF50;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #f1f1f1;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('images/tile-adhesive-hero.jpg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); /* Dark shadow behind the text for contrast */
+}
+
+.hero-subheading {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Dark shadow behind the text for contrast */
+}
+
+.cta-button {
+  background-color: #25D366;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #128C7E;
+}
+
+
+
+/* Product Features */
+.product-features {
+  text-align: center;
+  padding: 50px 20px;
+  background: #e7f5f1;
+}
+
+.product-features h2 {
+  font-size: 2.5rem;
+  color: #00796b;
+  margin-bottom: 40px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 280px;
+  text-align: center;
+}
+
+.feature-image {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  color: #00796b;
+  margin-top: 20px;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Product Images */
+.product-images {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.product-images h2 {
+  font-size: 2.5rem;
+  color: #00796b;
+  margin-bottom: 40px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  max-width: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+/* Pricing Section */
+.pricing {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f1f1f1;
+}
+
+.pricing h2 {
+  font-size: 2.5rem;
+  color: #00796b;
+}
+
+.pricing .cta-button {
+  background-color: #00796b;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-contact p {
+  font-size: 1rem;
+  color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hero-heading
